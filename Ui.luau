@@ -2,7 +2,7 @@ Library = {}
 SaveTheme = {}
 
 local themes = {
-	index = {'Dark', 'Amethyst'},
+index = {'Nebula', 'Amethyst', 'Dark'},
 	Amethyst = {
 		['Shadow'] = Color3.fromRGB(24, 24, 31),
 		['Background'] = Color3.fromRGB(29, 28, 38),
@@ -79,7 +79,8 @@ local themes = {
 			}
 		}
 	},
-    Nebula = {
+-- โค้ดธีม Nebula
+Nebula = {
     ['Shadow'] = Color3.fromRGB(15, 16, 28),
     ['Background'] = Color3.fromRGB(21, 22, 40),
     ['Page'] = Color3.fromRGB(28, 29, 51),
