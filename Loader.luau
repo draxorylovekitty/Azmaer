@@ -2,7 +2,86 @@ Library = {}
 SaveTheme = {}
 
 local themes = {
-index = {'Nebula', 'Amethyst', 'Dark'},
+index = {'Nebula', 'Amethyst', 'Dark', 'BlackHole'},
+BlackHole = {
+	['Shadow'] = Color3.fromRGB(8, 5, 15),
+	['Background'] = Color3.fromRGB(15, 10, 25),
+	['Page'] = Color3.fromRGB(10, 8, 18),
+	['Main'] = Color3.fromRGB(138, 43, 226), -- Purple gravitational glow
+	['Text & Icon'] = Color3.fromRGB(230, 220, 255),
+	['Function'] = {
+		['Toggle'] = {
+			['Background'] = Color3.fromRGB(15, 10, 25),
+			['True'] = {
+				['Toggle Background'] = Color3.fromRGB(58, 20, 95),
+				['Toggle Value'] = Color3.fromRGB(138, 43, 226),
+			},
+			['False'] = {
+				['Toggle Background'] = Color3.fromRGB(25, 18, 35),
+				['Toggle Value'] = Color3.fromRGB(40, 30, 55),
+			}
+		},
+		['Label'] = {
+			['Background'] = Color3.fromRGB(15, 10, 25),
+		},
+		['Dropdown'] = {
+			['Background'] = Color3.fromRGB(15, 10, 25),
+			['Value Background'] = Color3.fromRGB(10, 8, 18),
+			['Value Stroke'] = Color3.fromRGB(138, 43, 226), 
+			['Dropdown Select'] = {
+				['Background'] = Color3.fromRGB(10, 8, 18),
+				['Search'] = Color3.fromRGB(20, 15, 30),
+				['Item Background'] = Color3.fromRGB(25, 20, 38),
+			}
+		},
+		['Slider'] = {
+			['Background'] = Color3.fromRGB(15, 10, 25),
+			['Value Background'] = Color3.fromRGB(10, 8, 18),
+			['Value Stroke'] = Color3.fromRGB(138, 43, 226),
+			['Slider Bar'] = Color3.fromRGB(58, 20, 95),
+			['Slider Bar Value'] = Color3.fromRGB(138, 43, 226),
+			['Circle Value'] = Color3.fromRGB(200, 150, 255)
+		},
+		['Code'] = {
+			['Background'] = ColorSequence.new{
+				ColorSequenceKeypoint.new(0, Color3.fromRGB(15, 10, 25)), 
+				ColorSequenceKeypoint.new(1, Color3.fromRGB(10, 8, 18))
+			},
+			['Background Code'] = Color3.fromRGB(28, 20, 45),
+			['Background Code Value'] = Color3.fromRGB(20, 15, 35),
+			['ScrollingFrame Code'] = Color3.fromRGB(138, 43, 226)
+		},
+		['Button'] = {
+			['Background'] = Color3.fromRGB(15, 10, 25),
+			['Click'] = Color3.fromRGB(138, 43, 226)
+		},
+		['Textbox'] = {
+			['Background'] = Color3.fromRGB(15, 10, 25),
+			['Value Background'] = Color3.fromRGB(10, 8, 18),
+			['Value Stroke'] = Color3.fromRGB(138, 43, 226),
+		},
+		['Keybind'] = {
+			['Background'] = Color3.fromRGB(15, 10, 25),
+			['Value Background'] = Color3.fromRGB(10, 8, 18),
+			['Value Stroke'] = Color3.fromRGB(138, 43, 226),
+			['True'] = {
+				['Toggle Background'] = Color3.fromRGB(58, 20, 95),
+				['Toggle Value'] = Color3.fromRGB(138, 43, 226),
+			},
+			['False'] = {
+				['Toggle Background'] = Color3.fromRGB(25, 18, 35),
+				['Toggle Value'] = Color3.fromRGB(40, 30, 55),
+			}
+		},
+		['Color Picker'] = {
+			['Background'] = Color3.fromRGB(15, 10, 25),
+			['Color Select'] = {
+				['Background'] = Color3.fromRGB(10, 8, 18),
+				['UIStroke'] = Color3.fromRGB(138, 43, 226),
+				}
+			}
+		}
+	},
 	Amethyst = {
 		['Shadow'] = Color3.fromRGB(24, 24, 31),
 		['Background'] = Color3.fromRGB(29, 28, 38),
@@ -79,7 +158,6 @@ index = {'Nebula', 'Amethyst', 'Dark'},
 			}
 		}
 	},
--- โค้ดธีม Nebula
 Nebula = {
     ['Shadow'] = Color3.fromRGB(15, 16, 28),
     ['Background'] = Color3.fromRGB(21, 22, 40),
